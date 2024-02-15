@@ -1,0 +1,40 @@
+:root {
+    /* baggrounds farven 60% */
+    --main-bg-color: #2D2D2D;
+    /* farve til at skabe kontrast og danne figur 30% */
+    --secound-bg-color: #464646;
+    /* accent farve, bruges til små vigtige ting (knapper) 10% */
+    --accent-color: #CDDFC3;
+    /* farven til alt teksten hvid */
+    --main-text-color: #F8F8F3;
+    /* samme farve som tekst, brug denne til figurne */
+    --main-figur-color: #F8F8F3;
+    /* størrelse på overskriften h1 */
+    --ht-size: 5em; 
+    /* størrelse på overskrifter h2, h3, osv. */
+    --sht-size: 5em; 
+    /* størrelse på brød tekst */
+    --bt-size: 2em; 
+    /* størrelse på mindre tekst */
+    --st-size: 1em; 
+
+}
+
+@font-face {
+    font-family: robotoBold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: robotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: robotoLight;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
