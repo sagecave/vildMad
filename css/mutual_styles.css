@@ -3,6 +3,23 @@
     padding: 0;
     box-sizing: border-box;
   }
+  @font-face {
+    /* roboto regular */
+    font-family: robotoR;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    /* roboto Bold */
+    font-family: robotoB;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    /* roboto light */
+    font-family: robotoL;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+
   
   img {
     display: block;
@@ -43,10 +60,11 @@
   body {
     background: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
+
   }
   
   main {
-    margin-top: 80px;
+    margin-top: 150px;
   }
   
   /* Eksempel på brug af custom properties */
@@ -59,6 +77,8 @@
   h3 {
     color: var(--text-color);
     margin-left: 20px;
+    font-family: 'robotoB';
+    
   }
   
   p {
@@ -66,14 +86,16 @@
     margin: 20px 0 0 20px;
     max-width: 300px;
     line-height: 1.5rem;
+    font-family: 'robotoR';
   }
   
   .hero_buttons {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
+    
   }
   
   .outside_btn {
@@ -96,6 +118,11 @@
     font-size: var(--font-size-p-mobile);
     border-radius: 0.7rem;
     cursor: pointer;
+  }
+
+  .forside_container{
+    margin-left: 15%;
+    margin-right: 15%;
   }
   
   @media (min-width: 800px) {
@@ -139,7 +166,7 @@
   
   /* Stil af logo og navigations links */
   header .container a {
-    color: black;
+    
     font-size: 20px;
     text-decoration: none;
   }
@@ -148,13 +175,15 @@
   nav {
     display: grid;
     grid-gap: 60px;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
   }
   
   /* stil af links i burgermenu */
   nav a {
     font-size: 20px;
     text-decoration: none;
+    color: var(--text-color);
+    font-family: 'robotoB';
   }
   
   nav a:hover {

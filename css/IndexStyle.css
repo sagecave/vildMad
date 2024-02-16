@@ -1,0 +1,52 @@
+/* Forside style */
+
+.img_bg{
+    width: 12rem;
+    opacity: 0.5;
+  }
+  .img_bg_small{
+    width: 12rem;
+    opacity: 0.5;
+  }
+  .img_bg_bølge{
+    width: 20rem;
+    opacity: 0.5;
+  }
+  .svampe_img_container{
+    position: absolute;
+    top: 190px;
+    right: 150px; 
+    
+  }
+  .blade_img_container{
+    position: absolute;
+    top: 620px;
+    right: 150px; 
+    
+  }
+  .plante_img_container{
+    position: absolute;
+    top: -10px;
+    left: 300px; 
+   
+    
+  }
+  .bølje_img_container{
+    position: absolute;
+    bottom: -6px;
+    left: -6px;
+    
+  }
+
+  .forside_container h1{
+    font-size: 4rem;
+  }
+  .forside_container p{
+    font-size: 1.5rem;
+    max-width: 550px;
+    line-height: 2.2rem;
+  }
+  .hero_buttons{
+    position: relative;
+    left: 1rem;
+  }
