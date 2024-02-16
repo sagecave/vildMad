@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vild Mad Shcool</title>
+    <title>Mutual style css</title>
     <link rel="stylesheet" href="./css/mutual_styles.css">
-    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
 </head>
 
 <body>
     <header>
-
+        <div class="container">
+            <a class="logo" href="index.html">Logo</a>
+            <nav>
+                <a href="#">I'm outside</a>
+                <a href="#">I'm in the classroom</a>
+            </nav>
+            <button class="hamburger">
+                <span class="bar"></span>
+            </button>
+        </div>
     </header>
+    <nav class="mobile-nav">
+        <a href="#">I'm outside</a>
+        <a href="#">I'm in the classroom</a>
+    </nav>
     <main>
+        <h1>Are you ready to learn more about <span>"foraging"?</span> </h1>
+        <!-- <h2>Underoverskrift</h2>
+        <h3>Titler</h3> -->
+        <p>Yes, you read correctly - foraging. Find your own ingredients in nature or enjoy the site in the classroom
+            and learn more about ingredients that is located in your area. Are you in or out? Three, two, one - FORAGE!
+        </p>
+        <div class="hero_buttons">
+            <a href="#" class="outside_btn">I'm outside</a>
+            <a href="#" class="in_class_btn">I'm in the classroom</a>
+        </div>
 
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="./js/burger.js"></script>
 </body>
 
