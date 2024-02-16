@@ -10,13 +10,13 @@
     /* samme farve som tekst, brug denne til figurne */
     --main-figur-color: #F8F8F3;
     /* størrelse på overskriften h1 */
-    --ht-size: 5em; 
+    --ht-size: 3.5em; 
     /* størrelse på overskrifter h2, h3, osv. */
-    --sht-size: 5em; 
+    --sht-size: 2.5em; 
     /* størrelse på brød tekst */
-    --bt-size: 2em; 
+    --bt-size: 1em; 
     /* størrelse på mindre tekst */
-    --st-size: 1em; 
+    --st-size:0.6em; 
 
 }
 
@@ -37,4 +37,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+h1{
+    color: var(--main-text-color);
+    font-size: var(--ht-size);
+}
+h2,h3,h4,h5,h6{
+    color: var(--main-text-color);
+    font-size: var(--sht-size);
+}
+p{
+    color: var(--main-text-color);
+    font-size: var(--bt-size);
+}
+
+.accent_color{
+    color: var(--accent-color);
 }
