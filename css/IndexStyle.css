@@ -1,5 +1,6 @@
 /* Forside style */
-
+/* desktop */
+@media (min-width: 901px) {
 .img_bg{
     width: 12rem;
     opacity: 0.5;
@@ -49,4 +50,66 @@
   .hero_buttons{
     position: relative;
     left: 1rem;
+  }
+}
+  /* Ipad media */
+  @media (max-width: 900px) {
+    .img_bg{
+      width: 7rem;
+      opacity: 0.5;
+    }
+    .img_bg_small{
+      width: 10rem;
+      opacity: 0.5;
+    }
+    .img_bg_bølge{
+      width: 12rem;
+      opacity: 0.5;
+    }
+    .forside_container h1{
+      font-size: 3.14rem;
+    }
+    .forside_container p{
+      font-size: 1.3rem;
+      max-width: 400px;
+      line-height: 2.2rem;
+    }
+    .svampe_img_container{
+      position: absolute;
+      top: 190px;
+      left: 10px; 
+      
+    }
+    .blade_img_container{
+      position: absolute;
+      top: 620px;
+      right: 0px; 
+      
+    }
+    .plante_img_container{
+      position: absolute;
+      top: 230px;
+      right: 30px; 
+      rotate: 280deg;
+     
+      
+    }
+    .bølje_img_container{
+      position: absolute;
+      bottom: -6px;
+      left: -6px;
+      
+    }
+  }
+
+  @media (max-width: 440px) {
+
+    .forside_container h1{
+      font-size: 2rem;
+    }
+    .forside_container p{
+      font-size: 1rem;
+      max-width: 250px;
+      line-height: 2.2rem;
+    }
   }
