@@ -13,6 +13,7 @@
   
 }
 
+
 /* her placere jeg teksten lidt mere i midten ved at ændre dens placering lidt */
 .categories_tb{
  
@@ -33,8 +34,9 @@
 /* har laver et link i bunden af div'en, for at gøre at den rammer hele kassen har jeg lavet denne class */
 .link{
     display: block;
-    height: 10rem;
-    width: 20rem;
+    height: 100%;
+    width: 100%;
     position: relative;
-    top: -25px;
+
+    top: -43px;
 }
