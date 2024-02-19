@@ -5,6 +5,7 @@
   cursor: pointer;
   margin: 50px;
   border-radius: 50px;
+  font-weight: 600;
 }
 
 .modal {
@@ -17,8 +18,8 @@
   height: 100%;
   margin-bottom: 100px;
   overflow: auto;
-  background-color: rgb(0, 0, 0); /* Baggrundsfarve */
-  background-color: rgba(0, 0, 0, 0.4); /* Sort med opacitet */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -128,10 +129,6 @@ h4 {
 }
 
 /* Buttons */
-#button_grid {
-  width: 60%;
-  padding-bottom: 50px;
-}
 
 /* Back to ingredients */
 .close2 {
@@ -147,12 +144,6 @@ h4 {
   border: 2.5px solid #eae1d4;
 }
 
-#confirmed {
-  background-color: #cddfc3;
-  color: #464646;
-}
-
-#confirmed:hover,
 .close2:hover {
   cursor: pointer;
   font-weight: bolder;
@@ -194,5 +185,9 @@ h4 {
 
   .grid_pop_up {
     margin: 30px auto;
+  }
+
+  .back_button {
+    margin: 10px;
   }
 }
