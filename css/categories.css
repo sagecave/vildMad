@@ -1,0 +1,42 @@
+/* Her skaber jeg lidt mellemrum mellem h1 og cards */
+.cg_cardContainer{
+ margin-top: 2.5rem;   
+}
+
+/* dette er selve korttet som er vores links til at komme videre */
+.categoriesBox{
+    width: 28rem;
+    height: 13rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.6rem;
+    margin-top: 2rem;
+  
+}
+
+
+/* her placere jeg teksten lidt mere i midten ved at ændre dens placering lidt */
+.categories_tb{
+ 
+    position: relative;
+    top: 4.5em;
+    left: 3em;
+    
+}
+
+/* give teksten i kasssen størrere, og få dem i midten */
+.categories_tb p{
+    font-size: 2rem;
+    text-align:center;
+    
+   
+}
+
+/* har laver et link i bunden af div'en, for at gøre at den rammer hele kassen har jeg lavet denne class */
+.link{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    top: -43px;
+}

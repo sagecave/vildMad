@@ -65,6 +65,8 @@
   
   main {
     margin-top: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   
   /* Eksempel på brug af custom properties */
@@ -120,10 +122,7 @@
     cursor: pointer;
   }
 
-  .forside_container{
-    margin-left: 15%;
-    margin-right: 15%;
-  }
+  
   
   @media (min-width: 800px) {
     h1 {
