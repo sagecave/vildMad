@@ -1,3 +1,12 @@
+#pop_up_knap {
+  background-color: #cddfc3;
+  color: #464646;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 50px;
+  border-radius: 50px;
+}
+
 .modal {
   display: none; /* Skjult som standard */
   position: fixed;
@@ -126,13 +135,16 @@ h4 {
 
 /* Back to ingredients */
 .close2 {
-  border: 2.5px solid #eae1d4;
   color: #eae1d4;
   padding: 15px 30px;
   border-radius: 70px;
   font-size: 1rem;
   cursor: pointer;
   margin: 50px auto;
+}
+
+#back {
+  border: 2.5px solid #eae1d4;
 }
 
 #confirmed {
