@@ -7,15 +7,156 @@
     <title>Vild Mad Shcool</title>
     <link rel="stylesheet" href="./css/mutual_styles.css">
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/quiz.css">
 </head>
 
 <body>
     <header>
-
+        <div class="nav_container container">
+            <a class="logo" href="index.html">Logo</a>
+            <nav>
+                <a href="#">I'm outside</a>
+                <a href="#">I'm in the classroom</a>
+                <a href="#">Quiz</a>
+            </nav>
+            <button class="hamburger">
+                <span class="bar"></span>
+            </button>
+        </div>
     </header>
+    <nav class="mobile-nav">
+        <a href="#">I'm outside</a>
+        <a href="#">I'm in the classroom</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
     <main>
 
+        <div class="quiz_container">
+            <h1>Start the guiz!</h1>
+            <div class="quiz">
+                <h2>Quiz: do you know your ingrediens?</h2>
+                <form name="quiz" method="post">
+                    <div class="question">
+                        <p>What is the recommended method for picking the leaves of Strandvejbred?</p>
+                        <label class="quiz_label">
+                            <input type="radio" name="q1" value="a"> Pulling the entire plant from the ground
+                        </label>
+                        <label class="quiz_label">
+                            <input type="radio" name="q1" value="b"> Plucking the leaves one by one
+                        </label>
+                        <label class="quiz_label">
+                            <input type="radio" name="q1" value="c"> Cutting the stems with scissors
+                        </label>
+                        <label class="quiz_label">
+                            <input type="radio" name="q1" value="d"> Using a rake to gather the leaves
+                        </label>
+                    </div>
+                    <div class="question">
+                        <p>What is the taste characteristic of larger leaves of Strandvejbred?</p>
+                        <label>
+                            <input type="radio" name="q2" value="a"> Sweet and succulent
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="b"> Salty and tangy
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="c"> Bitter and woody
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="d"> Spicy and aromatic
+                        </label>
+                    </div>
+                    <div class="question">
+                        <p>What is the recommended method for picking the leaves of Strandvejbred?</p>
+                        <label>
+                            <input type="radio" name="q1" value="a"> Pulling the entire plant from the ground
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="b"> Plucking the leaves one by one
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="c"> Cutting the stems with scissors
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="d"> Using a rake to gather the leaves
+                        </label>
+                    </div>
+                    <div class="question">
+                        <p>What is the taste characteristic of larger leaves of Strandvejbred?</p>
+                        <label>
+                            <input type="radio" name="q2" value="a"> Sweet and succulent
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="b"> Salty and tangy
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="c"> Bitter and woody
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="d"> Spicy and aromatic
+                        </label>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="formular">
+            <h2>Rate your experience!</h2>
+            <div class="rating-form">
+                <div class="stars" id="stars-container">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+            </div>
+
+            <p>Thank you for taking the time to rate our website! Your feedback helps us improve. Feel free to share
+                any
+                feedback you may have.</p>
+            <form name="feedback" netlify>
+                <div class="info_container">
+                    <div class="row">
+                        <div class="column">
+                            <label for="name" required>Name*</label>
+                            <input type="text" id="name" name="name" placeholder="Your name..">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <label for="grade" required>Grade*</label>
+                            <select id="grade" name="grade">
+                                <option value="1">Grade 1</option>
+                                <option value="2">Grade 2</option>
+                                <option value="3">Grade 3</option>
+                                <option value="4">Grade 4</option>
+                                <option value="5">Grade 5</option>
+                                <option value="6">Grade 6</option>
+                                <option value="7">Grade 7</option>
+                                <option value="8">Grade 8</option>
+                                <option value="9">Grade 9</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="feedback">Feedback</label>
+                        <textarea id="feedback" name="feedback"
+                            placeholder="If you have any feedback - good or bad - write here..."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit rating and feedback">
+                </div>
+
+            </form>
+        </div>
     </main>
     <footer>
 

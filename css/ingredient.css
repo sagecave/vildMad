@@ -1,1 +1,92 @@
 /* ingredient style */
+
+.card_container {
+  position: relative;
+  background-color: var(--secondary-color);
+  margin: 0 10px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+
+.close_up_image {
+  position: relative;
+  z-index: 1; /* Sørg for, at dette billede er bagved */
+  border-radius: 10px 10px 0 0;
+}
+
+.ingredient_image {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  z-index: 2; /* Sørg for, at dette billede er foran */
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.ingredient_name {
+  margin-top: 60px;
+}
+
+p {
+  max-width: none;
+}
+.info_container {
+  margin-bottom: 20px;
+}
+.info {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  align-items: start;
+  row-gap: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.info img {
+  max-width: 80px;
+}
+
+.recipe_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+
+.recipe_container p {
+  margin: 5px 0;
+}
+
+.take_picture_text {
+  margin-bottom: 20px;
+}
+
+.back_btn {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  text-decoration: none;
+  margin: 15px auto;
+  background-color: var(--primary-button-color);
+  color: var(--primary-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: robotoB;
+}
+
+@media (min-width: 800px) {
+  .card_container {
+    margin: auto;
+    max-width: 700px;
+  }
+
+  .ingredient_image {
+    top: 28%;
+  }
+
+  .take_picture_text {
+    text-align: center;
+  }
+}
