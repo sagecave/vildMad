@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient</title>
+
+    <link rel="stylesheet" href="css/pop_up.css">
+    <link rel="stylesheet" href="css/mutual_styles.css">
+</head>
+
+<body>
+
+    <button id="pop_up_knap">Åben Pop Up</button>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="ingredient_closeup" src="img/pop_up/close_up.jpg" alt="Ingrediens Billede">
+            <img id="ingredient_image" src="img/pop_up/ingredient.png" alt="Ingrediens Billede">
+
+            <section class="text">
+                <h2 id="ingredient_name">Strandvejbred</h2>
+                <p id="ingredient_describtion" class="p">Strandvejbred er en gammel kendt råvare i det danske køkken.
+                    Den har
+                    været
+                    brugt til at lave suppe med vejbredboller, og
+                    i Sønderjylland har den erstattet grønkål i klassikeren grønlangkål.</p>
+                <h3 class="overskrift_pop_up">📍 Foraging Place</h3>
+                <p id="sankested" class="p">Strandvejbred kan findes i hele landet, hvor den har tilpasset sig det salte
+                    miljø nær
+                    stranden. Du
+                    finder den ofte på
+                    strandenge, langs stenede strandbredder og der, hvor bredden møder det øvrige landskab. Du kan også
+                    finde den inde i
+                    landet langs veje, hvor der saltes.</p>
+                <h3 class="overskrift_pop_up">🌤️ Season</h3>
+                <p id="season" class="p">Du kan sanke de unge blade fra april til juni - herefter bliver bladene ofte
+                    for
+                    træ-agtige
+                    og bitre.</p>
+            </section>
+
+            <h3>You can use it to make...</h3>
+
+            <div class="grid_pop_up">
+                <div>
+                    <img src="img/pop_up/opskrift1.png" alt="Opskrift 1">
+                    <br>
+                    <h4>Recipename</h4>
+                </div>
+
+                <div>
+                    <img src="img/pop_up/opskrift2.png" alt="Opskrift 2">
+                    <br>
+                    <h4>Recipename</h4>
+                </div>
+            </div>
+
+            <h3 class="take_picture">Take a picture of the ingredient and get it confirmed by your teacher.</h3>
+
+
+            <div class="back_button">
+                <span class="close2" id="back">Back to ingredients</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/pop_up.js"></script>
+</body>
+
+</html>
