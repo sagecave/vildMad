@@ -1,290 +1,282 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  @font-face {
-    /* roboto regular */
-    font-family: robotoR;
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
-    /* roboto Bold */
-    font-family: robotoB;
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  /* roboto regular */
+  font-family: robotoR;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
-    /* roboto light */
-    font-family: robotoL;
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
+  /* roboto Bold */
+  font-family: robotoB;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  /* roboto light */
+  font-family: robotoL;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-  
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  span {
-    color: var(--call-to-action-button-color);
-  }
-  
-  :root {
-    /* Farver */
-    --primary-color: #2d2d2d;
-    --secondary-color: #464646;
-    --text-color: #f8f8f3;
-    --primary-button-color: #eae1d4;
-    --call-to-action-button-color: #cddfc3;
-  
-    /* Skriftstørrelser */
-    --font-size-h1-mobile: 2.14rem;
-    --font-size-h1-tablet: 2.14rem;
-    --font-size-h1-desktop: 2.25rem;
-  
-    --font-size-h2-mobile: 1.5rem;
-    --font-size-h2-tablet: 1.5rem;
-    --font-size-h2-desktop: 1.56rem;
-  
-    --font-size-h3-mobile: 1.29rem;
-    --font-size-h3-tablet: 1.29rem;
-    --font-size-h3-desktop: 1.25rem;
-  
-    --font-size-p-mobile: 1rem;
-    --font-size-p-tablet: 1rem;
-    --font-size-p-desktop: 1rem;
-  }
-  
-  body {
-    background: var(--primary-color);
-    font-family: Arial, Helvetica, sans-serif;
+span {
+  color: var(--call-to-action-button-color);
+}
 
-  }
-  
-  main {
-    margin-top: 150px;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  
-  /* Eksempel på brug af custom properties */
+:root {
+  /* Farver */
+  --primary-color: #2d2d2d;
+  --secondary-color: #464646;
+  --text-color: #f8f8f3;
+  --primary-button-color: #eae1d4;
+  --call-to-action-button-color: #cddfc3;
+
+  /* Skriftstørrelser */
+  --font-size-h1-mobile: 2.14rem;
+  --font-size-h1-tablet: 2.14rem;
+  --font-size-h1-desktop: 2.25rem;
+
+  --font-size-h2-mobile: 1.5rem;
+  --font-size-h2-tablet: 1.5rem;
+  --font-size-h2-desktop: 1.56rem;
+
+  --font-size-h3-mobile: 1.29rem;
+  --font-size-h3-tablet: 1.29rem;
+  --font-size-h3-desktop: 1.25rem;
+
+  --font-size-p-mobile: 1rem;
+  --font-size-p-tablet: 1rem;
+  --font-size-p-desktop: 1rem;
+}
+
+body {
+  background: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin-top: 150px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Eksempel på brug af custom properties */
+h1 {
+  font-size: var(--font-size-h1-mobile);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+  margin-left: 20px;
+  font-family: "robotoB";
+}
+
+p {
+  color: var(--text-color);
+  margin: 20px 0 0 20px;
+  max-width: 300px;
+  line-height: 1.5rem;
+  font-family: "robotoR";
+}
+
+.hero_buttons {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.outside_btn {
+  background-color: var(--call-to-action-button-color);
+  color: #2d2d2d;
+  padding: 1.3rem 0;
+  text-decoration: none;
+  font-size: var(--font-size-p-mobile);
+  border-radius: 0.7rem;
+  cursor: pointer;
+  width: 250px;
+  text-align: center;
+}
+
+.in_class_btn {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 1.3rem 3.5rem;
+  text-decoration: none;
+  font-size: var(--font-size-p-mobile);
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
   h1 {
-    font-size: var(--font-size-h1-mobile);
+    font-size: var(--font-size-h1-tablet);
   }
-  
-  h1,
-  h2,
-  h3 {
-    color: var(--text-color);
-    margin-left: 20px;
-    font-family: 'robotoB';
-    
-  }
-  
-  p {
-    color: var(--text-color);
-    margin: 20px 0 0 20px;
-    max-width: 300px;
-    line-height: 1.5rem;
-    font-family: 'robotoR';
-  }
-  
-  .hero_buttons {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
-    
-  }
-  
-  .outside_btn {
-    background-color: var(--call-to-action-button-color);
-    color: #2d2d2d;
-    padding: 1.3rem 0;
-    text-decoration: none;
-    font-size: var(--font-size-p-mobile);
-    border-radius: 0.7rem;
-    cursor: pointer;
-    width: 250px;
-    text-align: center;
-  }
-  
-  .in_class_btn {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    padding: 1.3rem 3.5rem;
-    text-decoration: none;
-    font-size: var(--font-size-p-mobile);
-    border-radius: 0.7rem;
-    cursor: pointer;
-  }
+}
 
-  
-  
-  @media (min-width: 800px) {
-    h1 {
-      font-size: var(--font-size-h1-tablet);
-    }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: var(--font-size-h1-desktop);
   }
-  
-  @media (min-width: 1024px) {
-    h1 {
-      font-size: var(--font-size-h1-desktop);
-    }
-  }
-  
-  h2 {
-    font-size: var(--font-size-h2-mobile);
-  }
-  
-  /* Tilpas fontstørrelser for h3 og p på samme måde som h1 og h2 */
-  
-  /*-----------NAVIGATION-----------*/
-  
-  /* Placering af header  */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    margin: 0 auto;
-  }
-  
-  /* Kategorierne og logo skal være i hver deres ende */
-  header .container {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 15px 0 15px;
-  }
-  
-  /* Stil af logo og navigations links */
-  header .container a {
-    
-    font-size: 20px;
-    text-decoration: none;
-  }
-  
-  /* Underside links i header skal være i grid og have mellemrum mellem dem */
+}
+
+h2 {
+  font-size: var(--font-size-h2-mobile);
+}
+
+/* Tilpas fontstørrelser for h3 og p på samme måde som h1 og h2 */
+
+/*-----------NAVIGATION-----------*/
+
+/* Placering af header  */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  margin: 0 auto;
+}
+
+/* Kategorierne og logo skal være i hver deres ende */
+header .container {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px 0 15px;
+}
+
+/* Stil af logo og navigations links */
+header .container a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Underside links i header skal være i grid og have mellemrum mellem dem */
+nav {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(3, auto);
+}
+
+/* stil af links i burgermenu */
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: "robotoB";
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* hvis skærmens bredde er mindre end eller lig med 767 pixels vil nav element forsvinde */
+@media (max-width: 800px) {
   nav {
-    display: grid;
-    grid-gap: 60px;
-    grid-template-columns: repeat(3, auto);
+    display: none;
   }
-  
-  /* stil af links i burgermenu */
-  nav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--text-color);
-    font-family: 'robotoB';
+  .container {
+    padding: 0 30px;
   }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* hvis skærmens bredde er mindre end eller lig med 767 pixels vil nav element forsvinde */
-  @media (max-width: 800px) {
-    nav {
-      display: none;
-    }
-    .container {
-      padding: 0 30px;
-    }
-  }
-  
-  /* Position og stil af hamburger menu */
-  .hamburger {
-    position: relative;
-    display: block;
-    width: 35px;
-    cursor: pointer;
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-    z-index: 100;
-  }
-  
-  /* udseendet af de tre "bar"-elementer, som udgør hamburgerikonet defineres. Pseudo-elementer :before og :after" bruges til at skabe de vandrette streger i hamburgerikonet. */
-  .hamburger .bar,
-  .hamburger:after,
-  .hamburger:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: var(--text-color);
-    margin: 6px 0px;
-    transition: 0.4s;
-    border-radius: 5px;
-  }
-  
-  /* streger roteres og flyttes ved hjælp af "transform"-egenskaben,
+}
+
+/* Position og stil af hamburger menu */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 100;
+}
+
+/* udseendet af de tre "bar"-elementer, som udgør hamburgerikonet defineres. Pseudo-elementer :before og :after" bruges til at skabe de vandrette streger i hamburgerikonet. */
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--text-color);
+  margin: 6px 0px;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+/* streger roteres og flyttes ved hjælp af "transform"-egenskaben,
     når burgermenuen er aktiv,
     hvilket skaber et kryds-ikon  */
-  .hamburger.is-active:before {
-    transform: rotate(-45deg) translate(-8px, 6px);
-  }
-  
-  .hamburger.is-active:after {
-    transform: rotate(45deg) translate(-9px, -8px);
-  }
-  
-  /* den vandrette streger som ikke danner kryds usynlig, når burgermenuen er aktiv i form af (x) */
-  .hamburger.is-active .bar {
-    opacity: 0;
-  }
-  
-  /* Side som slider ind ved klik på burgermenu */
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+/* den vandrette streger som ikke danner kryds usynlig, når burgermenuen er aktiv i form af (x) */
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+/* Side som slider ind ved klik på burgermenu */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: var(--primary-color);
+  padding-top: 120px;
+  transition: 0.4s;
+}
+
+/* mobile-nav bliver hevet ind når man burgermenuen er aktiv  */
+.mobile-nav.is-active {
+  left: 0;
+}
+
+/* Stil af mobil navigation links */
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 10px 10px;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.mobile-nav a:hover {
+  text-decoration: underline;
+}
+
+/* hvis skærmens bredde er større end eller lig med 768 pixels så vil mobile-nav og burgermenu forsvinde */
+@media (min-width: 800px) {
   .mobile-nav {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    min-height: 100vh;
-    display: block;
-    z-index: 98;
-    background-color: var(--primary-color);
-    padding-top: 120px;
-    transition: 0.4s;
+    display: none;
   }
-  
-  /* mobile-nav bliver hevet ind når man burgermenuen er aktiv  */
-  .mobile-nav.is-active {
-    left: 0;
+
+  .hamburger {
+    display: none;
   }
-  
-  /* Stil af mobil navigation links */
-  .mobile-nav a {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto 16px;
-    text-align: center;
-    padding: 10px 10px;
-    color: var(--text-color);
-    text-decoration: none;
-    border-radius: 25px;
-  }
-  
-  .mobile-nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* hvis skærmens bredde er større end eller lig med 768 pixels så vil mobile-nav og burgermenu forsvinde */
-  @media (min-width: 800px) {
-    .mobile-nav {
-      display: none;
-    }
-  
-    .hamburger {
-      display: none;
-    }
-  }
+}
