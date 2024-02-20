@@ -156,10 +156,14 @@ header .container {
   margin: 10px 15px 0 15px;
 }
 
-/* Stil af logo og navigations links */
+/* Stil af navigations links */
 header .container a {
   font-size: 20px;
   text-decoration: none;
+}
+
+.logo {
+  max-width: 100px;
 }
 
 /* Underside links i header skal være i grid og have mellemrum mellem dem */
