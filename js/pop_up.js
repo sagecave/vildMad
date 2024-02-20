@@ -6,6 +6,7 @@ var btn = document.getElementById("pop_up_knap");
 
 // Få <span> elementet der lukker modal vinduet
 var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
 
 // Når brugeren klikker på knappen, åben modal vinduet
 btn.onclick = function () {
@@ -17,6 +18,10 @@ btn.onclick = function () {
 
 // Når brugeren klikker på <span> (x), luk modal vinduet
 span.onclick = function () {
+  modal.style.display = "none";
+};
+
+span2.onclick = function () {
   modal.style.display = "none";
 };
 
