@@ -148,3 +148,25 @@ input[type="submit"] {
     gap: 30px;
   }
 }
+
+/* BAGGRUND */
+
+.baggrund_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: absolute;
+  top: 10px;
+  left: 209px;
+  z-index: 0;
+  width: 87%;
+  height: 100%;
+  gap: 100px;
+  row-gap: 100px;
+  row-gap: 84px;
+}
+
+.baggrund_grid img {
+  width: 200px;
+  opacity: 0.5;
+}

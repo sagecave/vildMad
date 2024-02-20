@@ -1,4 +1,4 @@
-img {
+footer img {
   width: 30%;
 }
 
@@ -6,6 +6,10 @@ footer {
   padding-left: 20px;
   background-color: #67676799;
   border-radius: 10px;
+}
+
+#footer_categories {
+  margin-top: 250px;
 }
 
 footer img {
