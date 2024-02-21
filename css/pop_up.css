@@ -1,4 +1,4 @@
-#pop_up_knap {
+.pop_up_knap {
   background-color: #cddfc3;
   color: #464646;
   padding: 10px 20px;
@@ -8,10 +8,11 @@
   font-weight: 600;
 }
 
+
 .modal {
   display: none; /* Skjult som standard */
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
@@ -54,13 +55,13 @@
 }
 
 /* IMG */
-#ingredient_closeup {
+.ingredient_closeup {
   height: 300px;
   width: 100%;
   border-radius: 15px;
 }
 
-#ingredient_image {
+.ingredient_image {
   border-radius: 50%;
   width: 230px;
   height: 230px;
@@ -70,7 +71,7 @@
 }
 
 /* TEKST */
-#ingredient_name {
+.ingredient_name {
   margin-top: 90px;
   margin-bottom: 20px;
 }
@@ -162,18 +163,18 @@ h4 {
     padding: 3px 9px;
   }
 
-  #ingredient_closeup {
+  .ingredient_closeup {
     height: 200px;
   }
 
-  #ingredient_image {
+  .ingredient_image {
     width: 100px;
     height: 100px;
     top: 161px;
     left: 20%;
   }
 
-  #ingredient_name {
+  .ingredient_name {
     margin-top: 66px;
     font-size: 1.3rem;
   }

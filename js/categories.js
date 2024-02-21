@@ -24,7 +24,7 @@ function showData(foraging) {
   foraging.forEach((landscape) => {
     categoryClone = categoryTemplate.cloneNode(true).content;
     categoryClone.querySelector(".categories_tb p").textContent = landscape.landscape_territory;
-    categoryClone.querySelector(".link").href = `ingredientlist.html?landscape_territory=${landscape.landscape_territory}`;
+    categoryClone.querySelector(".link").href = `ingredientlist_com.html?landscape_territory=${landscape.landscape_territory}`;
     categoryContainer.appendChild(categoryClone);
   });
 }
