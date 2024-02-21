@@ -1,3 +1,13 @@
+.main_categories {
+  margin: 150px 15px 0 15px;
+}
+
+.grid_1-1 {
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  display: grid;
+  justify-items: center;
+}
+
 /* Her skaber jeg lidt mellemrum mellem h1 og cards */
 .cg_cardContainer {
   margin-top: 2.5rem;
@@ -34,4 +44,11 @@
   position: relative;
 
   top: -43px;
+}
+
+@media (min-width: 800px) {
+  .main_categories {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dette er et tema-websted som tilbyder information om sankesteder og hvilke råvarer man kan sanke.">
     <title>Vild Mad Shcool</title>
     <link rel="stylesheet" href="./css/mutual_styles.css">
     <link rel="stylesheet" href="./css/layout.css">
@@ -14,7 +16,7 @@
 <body>
     <header>
         <div class="nav_container container">
-            <a class="logo" href="index.html"><img src="img/svg/logo.svg" alt="logo"></a>
+            <a class="logo" href="index.html"><img src="img/svg/logo.svg" width="100" height="126" alt="logo"></a>
             <nav>
                 <a href="categories.html">Start foraging</a>
                 <a href="quiz.html">Quiz</a>
@@ -30,86 +32,81 @@
     </nav>
     <main>
 
-        <!-- <div class="baggrund_grid">
-
-            <div class="svampe_imgcontainer">
-                <img src="img/svg/svamp.svg" alt="en svamp">
-            </div>
-            <div class="blade_imgcontainer">
-                <img src="/img/svg/blade.svg" alt="et blad">
-            </div>
-            <div class="plante_imgcontainer">
-                <img src="/img/svg/plante.svg" alt="en plante">
-            </div>
-            <div class="bølge_imgcontainer">
-                <img src="/img/svg/bølge.svg" alt="en bølge">
-            </div>
-
-        </div> -->
-
         <div class="quiz_container">
             <h1>Start the guiz!</h1>
             <div class="quiz">
                 <h2>Quiz: do you know your ingrediens?</h2>
                 <form name="quiz" method="post">
                     <div class="question">
-                        <p>What is the recommended method for picking the leaves of Strandvejbred?</p>
+                        <p>Have you ever tried foraging?</p>
                         <label class="quiz_label">
-                            <input type="radio" name="q1" value="a"> Pulling the entire plant from the ground
+                            <input type="radio" name="q1" value="a"> Yes
                         </label>
                         <label class="quiz_label">
-                            <input type="radio" name="q1" value="b"> Plucking the leaves one by one
+                            <input type="radio" name="q1" value="b"> No
                         </label>
                         <label class="quiz_label">
-                            <input type="radio" name="q1" value="c"> Cutting the stems with scissors
-                        </label>
-                        <label class="quiz_label">
-                            <input type="radio" name="q1" value="d"> Using a rake to gather the leaves
+                            <input type="radio" name="q1" value="c"> I don´t know what it is?
                         </label>
                     </div>
                     <div class="question">
-                        <p>What is the taste characteristic of larger leaves of Strandvejbred?</p>
+                        <p>Have you learned more about foraging after using this website?</p>
                         <label>
-                            <input type="radio" name="q2" value="a"> Sweet and succulent
+                            <input type="radio" name="q2" value="a"> Yes, alot
                         </label>
                         <label>
-                            <input type="radio" name="q2" value="b"> Salty and tangy
+                            <input type="radio" name="q2" value="b"> Maybe a little
                         </label>
                         <label>
-                            <input type="radio" name="q2" value="c"> Bitter and woody
+                            <input type="radio" name="q2" value="c"> No, not really
                         </label>
                         <label>
-                            <input type="radio" name="q2" value="d"> Spicy and aromatic
-                        </label>
-                    </div>
-                    <div class="question">
-                        <p>What is the recommended method for picking the leaves of Strandvejbred?</p>
-                        <label>
-                            <input type="radio" name="q3" value="a"> Pulling the entire plant from the ground
-                        </label>
-                        <label>
-                            <input type="radio" name="q3" value="b"> Plucking the leaves one by one
-                        </label>
-                        <label>
-                            <input type="radio" name="q3" value="c"> Cutting the stems with scissors
-                        </label>
-                        <label>
-                            <input type="radio" name="q3" value="d"> Using a rake to gather the leaves
+                            <input type="radio" name="q2" value="d"> I have learned nothing
                         </label>
                     </div>
                     <div class="question">
-                        <p>What is the taste characteristic of larger leaves of Strandvejbred?</p>
+                        <p>Do you now know more about the ingrediens you can forage in Denmark?</p>
                         <label>
-                            <input type="radio" name="q4" value="a"> Sweet and succulent
+                            <input type="radio" name="q3" value="a"> Yes
                         </label>
                         <label>
-                            <input type="radio" name="q4" value="b"> Salty and tangy
+                            <input type="radio" name="q3" value="b"> Maybe a little more
                         </label>
                         <label>
-                            <input type="radio" name="q4" value="c"> Bitter and woody
+                            <input type="radio" name="q3" value="c"> No not really
                         </label>
                         <label>
-                            <input type="radio" name="q4" value="d"> Spicy and aromatic
+                            <input type="radio" name="q3" value="d"> I know nothing about the ingrediens
+                        </label>
+                    </div>
+                    <div class="question">
+                        <p>Do you think that you will use a website to find ingrediens in your area?</p>
+                        <label>
+                            <input type="radio" name="q4" value="a"> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="b"> Sometimes
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="c"> Rarely
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="d"> Never
+                        </label>
+                    </div>
+                    <div class="question">
+                        <p>What would you rate this website?</p>
+                        <label>
+                            <input type="radio" name="q5" value="a"> Amazing
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="b"> Okay
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="c"> Could be better
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="d"> Bad
                         </label>
                     </div>
                     <input type="submit" value="Submit">
@@ -179,7 +176,7 @@
 
             <div class="footer_links">
                 <h4>Menu</h4>
-                <a href="categories.html">Start forarging</a>
+                <a href="categories.html">Start foraging</a>
                 <a href="quiz.html">Quiz</a>
             </div>
 
@@ -187,15 +184,15 @@
                 <h4>A project developed by</h4>
                 <div class="logo_footer_grid">
                     <div>
-                        <img src="img/footer/vildmad_logo.svg" alt="Vild Mad Logo">
+                        <img src="img/footer/vildmad_logo.svg" alt="Vild Mad Logo" width="75" height="83">
                     </div>
                     <div>
-                        <img src="img/footer/vores_logo.svg" alt="Logo" class="vores_logo">
+                        <img src="img/footer/vores_logo.svg" alt="Logo" class="vores_logo" width="88" height="110">
                     </div>
                 </div>
             </div>
 
-            <div>
+            <!-- <div>
                 <div class="some_logo_grid">
                     <div>
                         <a href="https://www.instagram.com/vildmaddk/"><svg xmlns="http://www.w3.org/2000/svg"
@@ -214,9 +211,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-
-        </div>
+                </div>
+            </div> -->
     </footer>
     <script src="./js/burger.js"></script>
 

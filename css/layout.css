@@ -1,9 +1,3 @@
-.grid_1-1 {
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  display: grid;
-  justify-items: center;
-}
-
 @media (min-width: 800px) {
   main {
     margin-left: 15%;

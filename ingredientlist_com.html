@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dette er et tema-websted som tilbyder information om sankesteder og hvilke råvarer man kan sanke.">
     <title>Ingridientlist</title>
     <link rel="stylesheet" href="./css/mutual_styles.css">
     <link rel="stylesheet" href="./css/ingredientlist.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/pop_up.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
     <header>
 
         <div class="nav_container container">
-            <a class="logo" href="index.html">Logo</a>
+            <a class="logo" href="index.html"><img src="img/svg/logo.svg" width="100" height="126" alt="logo"></a>
             <nav>
                 <a href="categories.html">Start foraging</a>
                 <a href="quiz.html">Quiz</a>
@@ -28,24 +31,35 @@
             <a href="categories.html">Start foraging</a>
             <a href="quiz.html">Quiz</a>
         </nav>
-        <div class="header-container">
-            <img src="img/kort.png" alt="kort" class="header-image">
-        </div>
     </header>
 
+    <main class="main_ingredientlist">
+        <img src="img/kort.png" alt="kort" class="map-img">
 
-    <main>
+
+
         <div class="emoji">
-            <div class="round-box">&#129744; Berry</div>
-            <div class="round-box">&#127807; Herb</div>
-            <div class="round-box">&#127810; Tree</div>
-            <div class="round-box">&#127812; Mushroom</div>
+            <div class="round-box">
+                <p>&#127812;</p>
+                <p>Mushroom</p>
+            </div>
+            <div class="round-box">
+                <p>&#129744;</p>
+                <p>Berry</p>
+            </div>
+            <div class="round-box">
+                <p>&#127807;</p>
+                <p>Herb</p>
+            </div>
+            <div class="round-box">
+                <p>&#127810;</p>
+                <p>Tree</p>
+            </div>
         </div>
 
         <div class="directions">
-
+            <h2>The recipe for sucess:</h2>
             <ul>
-                <h2>The recipe for sucess:</h2>
                 <li>Spot the icon on the map</li>
                 <li>Find the ingredient</li>
                 <li>Take a picture of the ingredient</li>
@@ -53,55 +67,58 @@
                 <li>Move on to find the next ingredient</li>
             </ul>
         </div>
-        <div>
-            <h3>The fastest to find and get all ingrediens confirmed WINS!
-                Goodluck!</h3>
+
+        <h3 class="goodluck_text">The fastest to find and get all ingrediens confirmed WINS!
+            Goodluck!</h3>
+
+        <div class="ingredient-columns"></div>
+        <div class="quiz_btn_container">
+            <a class="quiz_btn" href="quiz.html">Go to quiz</a>
         </div>
-
-
-        <div class="ingredient-columns">
-
-        </div>
-
-        <!-- <div class="ingredient-columns">
-            <div class="ingredient-column">
-                <img src="img/ene.png" alt="ene" class="ingredient-image">
-                <p>Hyldeblomst &#127810;</p>
-                <button class="learn-more-btn">Learn More</button>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                    <p>Found the ingredient</p>
-                </label>
-
-            </div>
-            <div class="ingredient-column">
-                <img src="img/ene.png" alt="ene" class="ingredient-image">
-                <p>Skovøre &#127812;</p>
-                <button class="learn-more-btn">Learn More</button>
-                <label class="switch">
-
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                    <p>Found the ingredient</p>
-                </label>
-            </div>
-        </div> -->
-
-        <div class="quiz">
-            <a href="quiz.html">
-                <button class="gotoquiz">Go to quiz</button>
-            </a>
-        </div>
-
-
-
 
     </main>
+    <footer id="footer_categories">
+        <div class="footer_grid">
 
-    <footer>
+            <div class="footer_links">
+                <h4>Menu</h4>
+                <a href="categories.html">Start foraging</a>
+                <a href="quiz.html">Quiz</a>
+            </div>
 
+            <div class="pro_developed_by">
+                <h4>A project developed by</h4>
+                <div class="logo_footer_grid">
+                    <div>
+                        <img src="img/footer/vildmad_logo.svg" alt="Vild Mad Logo" width="75" height="83">
+                    </div>
+                    <div>
+                        <img src="img/footer/vores_logo.svg" alt="Logo" class="vores_logo" width="88" height="110">
+                    </div>
+                </div>
+            </div>
 
+            <!-- <div>
+                <div class="some_logo_grid">
+                    <div>
+                        <a href="https://www.instagram.com/vildmaddk/"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+                                <path fill="#dfdfdfed"
+                                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/vildmaddk"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+                                <path fill="#dfdfdfed"
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div> -->
     </footer>
 
     <script src="./js/burger.js"></script>
@@ -112,11 +129,9 @@
 <template class="produkt_template">
     <div class="ingredient-column">
         <img class="ig_img ingredient-image" src="img/ene.png" alt="ene">
-        <p class="ig_name">Brombær &#129744;</p>
-
-
-
-        <button class="pop_up_knap">Åben Pop Up</button>
+        <p class="ig_name">Brombær</p>
+        <p class="ingredient_icon">&#127807;</p>
+        <button class="pop_up_knap ingredient_knap">Learn more</button>
 
         <div class="modal myModal">
 
@@ -128,13 +143,13 @@
 
                 <section class="text">
                     <h2 class="ingredient_name">Strandvejbred</h2>
-                    <p class="ingredient_describtion" class="p">Strandvejbred er en gammel kendt råvare i det danske
+                    <p class="ingredient_describtion p">Strandvejbred er en gammel kendt råvare i det danske
                         køkken.
                         Den har
                         været
                         brugt til at lave suppe med vejbredboller, og
                         i Sønderjylland har den erstattet grønkål i klassikeren grønlangkål.</p>
-                    <h3 class="overskrift_pop_up">📍 Foraging Place</h3>
+                    <h3 class="overskrift_pop_up">📍 Foraging place</h3>
                     <p class="p sankested">Strandvejbred kan findes i hele landet, hvor den har tilpasset sig det
                         salte
                         miljø nær
@@ -151,41 +166,30 @@
                         for
                         træ-agtige
                         og bitre.</p>
+                    <h3 class="use_it_text">You can use it to make...</h3>
                 </section>
 
-                <h3>You can use it to make...</h3>
 
                 <div class="grid_pop_up">
-                    <div>
-                        <img src="img/pop_up/opskrift1.png" alt="Opskrift 1">
-                        <br>
-                        <h4>Recipename</h4>
+                    <div> <img src="img/pop_up/opskrift1.png" alt="Opskrift 1">
+                        <p class="recipename">Recipename</p>
                     </div>
+                    <div><img src="img/pop_up/opskrift2.png" alt="Opskrift 2">
 
-                    <div>
-                        <img src="img/pop_up/opskrift2.png" alt="Opskrift 2">
-                        <br>
-                        <h4>Recipename</h4>
+                        <p class="recipename">Recipename</p>
                     </div>
                 </div>
-
                 <h3 class="take_picture">Take a picture of the ingredient and get it confirmed by your teacher.</h3>
-
 
                 <div class="back_button">
                     <span class="close2 back">Back to ingredients</span>
                 </div>
-
             </div>
-
         </div>
-
-
-
         <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
-            <p>Found the ingredient</p>
+            <p>Confirmed</p>
         </label>
 
     </div>
