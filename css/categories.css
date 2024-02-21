@@ -1,6 +1,7 @@
 /* Her skaber jeg lidt mellemrum mellem h1 og cards */
 .cg_cardContainer {
   margin-top: 2.5rem;
+  place-self: center;
 }
 
 /* dette er selve korttet som er vores links til at komme videre */
@@ -33,53 +34,4 @@
   position: relative;
 
   top: -43px;
-}
-
-/* placering af ikoner på siden */
-.svampe_imgcontainer {
-  position: absolute;
-  top: 35%;
-  left: 6%;
-  z-index: -1;
-}
-
-.blade_imgcontainer {
-  position: absolute;
-  top: 90%;
-  left: 95%;
-  z-index: -1;
-}
-
-.plante_imgcontainer {
-  position: absolute;
-  top: 20%;
-  left: 80%;
-  z-index: -1;
-}
-
-.bølge_imgcontainer {
-  position: absolute;
-  top: 143%;
-  left: -2%;
-  z-index: -1;
-}
-
-.img_blade_sm_big {
-  width: 10rem;
-  opacity: 0.5;
-}
-
-.img_svamp_sm_big {
-  width: 10rem;
-  opacity: 0.5;
-}
-
-.img_bølge_sm_big {
-  width: 10rem;
-  opacity: 0.5;
-}
-
-.img_plante_sm_big {
-  width: 10rem;
-  opacity: 0.5;
 }

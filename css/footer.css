@@ -4,7 +4,7 @@ footer img {
 
 footer {
   padding-left: 20px;
-  background-color: #67676799;
+  background-color: var(--secondary-color);
   border-radius: 10px;
 }
 
