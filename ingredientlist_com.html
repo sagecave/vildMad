@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/mutual_styles.css">
     <link rel="stylesheet" href="./css/ingredientlist.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/pop_up.css">
 </head>
 
 <body>
@@ -59,30 +60,10 @@
 
 
         <div class="ingredient-columns">
-            <div class="ingredient-column">
-                <img src="img/ene.png" alt="ene" class="ingredient-image">
-                <p>Brombær &#129744;</p>
-                <button class="learn-more-btn">Learn More</button>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                    <p>Found the ingredient</p>
-                </label>
 
-            </div>
-            <div class="ingredient-column">
-                <img src="img/ene.png" alt="ene" class="ingredient-image">
-                <p>Ene &#127807;</p>
-                <button class="learn-more-btn">Learn More</button>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                    <p>Found the ingredient</p>
-                </label>
-
-            </div>
         </div>
-        <div class="ingredient-columns">
+
+        <!-- <div class="ingredient-columns">
             <div class="ingredient-column">
                 <img src="img/ene.png" alt="ene" class="ingredient-image">
                 <p>Hyldeblomst &#127810;</p>
@@ -105,7 +86,7 @@
                     <p>Found the ingredient</p>
                 </label>
             </div>
-        </div>
+        </div> -->
 
         <div class="quiz">
             <a href="quiz.html">
@@ -113,13 +94,100 @@
             </a>
         </div>
 
+
+
+
     </main>
 
     <footer>
+
+
     </footer>
 
     <script src="./js/burger.js"></script>
-    <script>src = "./js/ingredient.js"</script>
+    <script src="./js/ingredientlist.js"></script>
+
 </body>
+<template class="produkt_template">
+    <div class="ingredient-column">
+        <img class="ig_img ingredient-image" src="img/ene.png" alt="ene">
+        <p class="ig_name">Brombær &#129744;</p>
+
+
+
+        <button class="pop_up_knap">Åben Pop Up</button>
+
+        <div class="modal myModal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="ingredient_closeup" src="img/pop_up/close_up.jpg" alt="Ingrediens Billede">
+                <img class="ingredient_image" src="img/pop_up/ingredient.png" alt="Ingrediens Billede">
+
+                <section class="text">
+                    <h2 class="ingredient_name">Strandvejbred</h2>
+                    <p class="ingredient_describtion" class="p">Strandvejbred er en gammel kendt råvare i det danske
+                        køkken.
+                        Den har
+                        været
+                        brugt til at lave suppe med vejbredboller, og
+                        i Sønderjylland har den erstattet grønkål i klassikeren grønlangkål.</p>
+                    <h3 class="overskrift_pop_up">📍 Foraging Place</h3>
+                    <p class="p sankested">Strandvejbred kan findes i hele landet, hvor den har tilpasset sig det
+                        salte
+                        miljø nær
+                        stranden. Du
+                        finder den ofte på
+                        strandenge, langs stenede strandbredder og der, hvor bredden møder det øvrige landskab. Du
+                        kan
+                        også
+                        finde den inde i
+                        landet langs veje, hvor der saltes.</p>
+                    <h3 class="overskrift_pop_up">🌤️ Season</h3>
+                    <p class="p season">Du kan sanke de unge blade fra april til juni - herefter bliver bladene
+                        ofte
+                        for
+                        træ-agtige
+                        og bitre.</p>
+                </section>
+
+                <h3>You can use it to make...</h3>
+
+                <div class="grid_pop_up">
+                    <div>
+                        <img src="img/pop_up/opskrift1.png" alt="Opskrift 1">
+                        <br>
+                        <h4>Recipename</h4>
+                    </div>
+
+                    <div>
+                        <img src="img/pop_up/opskrift2.png" alt="Opskrift 2">
+                        <br>
+                        <h4>Recipename</h4>
+                    </div>
+                </div>
+
+                <h3 class="take_picture">Take a picture of the ingredient and get it confirmed by your teacher.</h3>
+
+
+                <div class="back_button">
+                    <span class="close2 back">Back to ingredients</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            <p>Found the ingredient</p>
+        </label>
+
+    </div>
+</template>
 
 </html>

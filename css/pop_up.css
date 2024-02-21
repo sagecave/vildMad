@@ -1,7 +1,6 @@
-#pop_up_knap {
-  border: 2.5px solid #cddfc3;
-  background-color: #2d2d2d;
-  color: #cddfc3;
+.pop_up_knap {
+  background-color: #cddfc3;
+  color: #464646;
   padding: 10px 20px;
   cursor: pointer;
   margin: 50px;
@@ -9,10 +8,11 @@
   font-weight: 600;
 }
 
+
 .modal {
   display: none; /* Skjult som standard */
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
@@ -53,13 +53,13 @@
 }
 
 /* IMG */
-#ingredient_closeup {
+.ingredient_closeup {
   height: 300px;
   width: 100%;
   border-radius: 15px;
 }
 
-#ingredient_image {
+.ingredient_image {
   border-radius: 50%;
   width: 230px;
   height: 230px;
@@ -69,8 +69,8 @@
 }
 
 /* TEKST */
-#ingredient_name {
-  margin-top: 145px;
+.ingredient_name {
+  margin-top: 90px;
   margin-bottom: 20px;
   margin-left: 140px;
 }
@@ -175,88 +175,41 @@ h4 {
 
   .modal .close {
     position: absolute;
-    top: 9px;
-    right: 63px;
+    top: 0;
+    right: 13px;
     font-size: 2rem;
-    padding: 8px 16px;
+    padding: 3px 9px;
   }
 
-  #ingredient_closeup {
+  .ingredient_closeup {
     height: 200px;
   }
 
   #ingredient_image {
     width: 120px;
     height: 120px;
+  .ingredient_image {
+    width: 100px;
+    height: 100px;
     top: 161px;
     left: 20%;
   }
 
-  #ingredient_name {
+  .ingredient_name {
     margin-top: 66px;
     font-size: 1.3rem;
   }
 
   .p {
     font-size: 0.8rem;
+    margin: 19px;
   }
 
-  #back {
-    margin: 50px 208px;
-  }
-}
-
-@media only screen and (min-width: 1px) and (max-width: 599px) {
-  .modal .close {
-    position: absolute;
-    top: -1px;
-    right: 8px;
-    font-size: 2rem;
-    padding: 5px 12px;
+  .grid_pop_up {
+    margin: 30px auto;
   }
 
-  .modal-content {
-    width: 80%;
-  }
-
-  #ingredient_closeup {
-    height: 200px;
-  }
-
-  #ingredient_image {
-    width: 120px;
-    height: 120px;
-    top: 161px;
-    left: 20%;
-  }
-
-  #ingredient_name {
-    margin-top: 66px;
-    font-size: 1.3rem;
-  }
-
-  .p {
-    font-size: 0.8rem;
-    max-width: 260px;
-  }
-
-  #back {
-    font-size: 0.8rem;
-    padding: 10px 20px;
-    margin: 14px 76px;
-  }
-
-  .emoji,
-  #ingredient_name,
-  .p {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .take_picture {
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  .back_button {
+    margin: 10px;
   }
 }
