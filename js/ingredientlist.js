@@ -38,15 +38,6 @@ function init() {
     });
 }
 
-//   fetch(produktURL)
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (json) {
-//       showProdukts(json);
-//     });
-// }
-
 function showProdukts(ProduktsJSON) {
   console.log(ProduktsJSON);
   let ProduktClone;
@@ -58,16 +49,17 @@ function showProdukts(ProduktsJSON) {
     ProduktClone.querySelector(".ig_img").alt = `${produkt.name}`;
 
     ProduktClone.querySelector(".ig_name").textContent = produkt.name;
+    ProduktClone.querySelector(".ingredient_name").textContent = produkt.name;
+    ProduktClone.querySelector(".ingredient_describtion").textContent = produkt.howPick;
+    ProduktClone.querySelector(".sankested").textContent = produkt.WhereFind;
+    ProduktClone.querySelector(".season").textContent = produkt.season;
+
+    ProduktClone.querySelector(".ingredient_closeup").src = `https://vildmadv2.vps.webdock.io/application/files${produkt.image_second}`;
+    ProduktClone.querySelector(".ingredient_closeup").alt = `Skov`;
+    ProduktClone.querySelector(".ingredient_image").src = `https://vildmadv2.vps.webdock.io/application/files${produkt.image_profil}`;
+    ProduktClone.querySelector(".ingredient_image").alt = `Skov`;
 
     console.log("er der næsten");
-
-    let modal = document.querySelector(".myModal");
-    /*     let btn = ProduktClone.querySelectorAll(".pop_up_knap");
-     */
-    // Få knappen der åbner modal vinduet
-    // let btn = document.querySelector(".pop_up_knap");
-
-    // Få <span> elementet der lukker modal vinduet
 
     ProduktClone.querySelector(".pop_up_knap").addEventListener("click", () => {
       console.log("clickB");
@@ -81,56 +73,8 @@ function showProdukts(ProduktsJSON) {
     ProduktClone.querySelector(".close2").addEventListener("click", () => {
       document.querySelector(".modal").style.display = "none";
       console.log("tjek2");
-    }); /* 
-    ProduktClone.querySelector(".pop_up_knap").addEventListener("click", functionName()); */
-    // Når brugeren klikker på knappen, åben modal vinduet
-    // btn.onclick = function () {
-    //   modal.style.display = "block";
-
-    //   // Sæt data fra JSON i modal vinduet
-
-    //   // document.getElementById("ingredient_name").innerHTML = jsonData.ingredient;
-    //   // document.getElementById("ingredient_image").src = jsonData.images.ingredient;
-    //   // console.log("tjek1");
-    // };
-
-    // // Når brugeren klikker på <span> (x), luk modal vinduet
-    // span.onclick = function () {
-    //   modal.style.display = "none";
-    //   console.log("tjek2");
-    // };
-
-    // // Når brugeren klikker hvor som helst uden for modal vinduet, luk det
-    // window.onclick = function (event) {
-    //   if (event.target == modal) {
-    //     modal.style.display = "none";
-    //     console.log("tjek3");
-    //   }
-    // };
-
-    // ProduktClone.querySelector(".produkt_category").textContent = produkt.category;
-
-    // ProduktClone.querySelector(".link_produkt").href = `produkt.html?id=${produkt.id}`;
+    });
 
     produktListe_container.appendChild(ProduktClone);
-
-    // let rabatForsvind
-    // let stockForsvind
-    // document.querySelector(".produkt_outOfStock").textContent = stockForsvind
-    // document.querySelector(".produkt_rabt").textContent = rabatForsvind
-
-    // if (produkt.discount <= 0){
-    //     document.querySelector(".rabat_boks").classList.remove(".hidden_rabt")
-    // }
   });
 }
-
-/* function buttonClick() {
-
-}
- */
-// let span = document.getElementsByClassName("close")[0];
-// span.onclick = function spanClose() {
-//   modal.style.display = "none";
-//   console.log("tjek2");
-// };
