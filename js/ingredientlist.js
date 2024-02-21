@@ -71,7 +71,7 @@ function showProdukts(ProduktsJSON) {
 
     ProduktClone.querySelector(".pop_up_knap").addEventListener("click", () => {
       console.log("clickB");
-      modal.style.display = "block";
+      document.querySelector(".modal").style.display = "block";
     });
 
     ProduktClone.querySelector(".close").addEventListener("click", () => {
