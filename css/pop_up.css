@@ -1,13 +1,12 @@
 .pop_up_knap {
-  background-color: #cddfc3;
+  /* background-color: #cddfc3;
   color: #464646;
   padding: 10px 20px;
   cursor: pointer;
   margin: 50px;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 600; */
 }
-
 
 .modal {
   display: none; /* Skjult som standard */
@@ -24,25 +23,25 @@
 }
 
 .modal-content {
+  display: grid;
   background-color: #464646;
-  margin: 4% auto;
-  width: 50%;
+  margin: 20px auto;
+  width: 95%;
   border-radius: 15px;
 }
 
 /* Luk-knap */
 .modal .close {
   position: absolute;
-  top: 3.5%;
-  right: 314px;
-  color: #464646;
+  top: 4%;
+  left: 77%;
+  color: var(--primary-color);
   background-color: #eae1d4;
   border-radius: 50%;
   padding: 23px 20px;
   cursor: pointer;
-  line-height: 30px;
-  margin: 10px;
-  font-size: 4rem;
+  line-height: 20px;
+  font-size: 3rem;
 }
 
 .close:hover,
@@ -61,80 +60,89 @@
 
 .ingredient_image {
   border-radius: 50%;
-  width: 230px;
-  height: 230px;
+  width: 150px;
+  height: 150px;
   position: absolute;
-  left: 28%;
-  top: 250px;
+  left: 7%;
+  top: 37%;
 }
 
 /* TEKST */
 .ingredient_name {
   margin-top: 90px;
   margin-bottom: 20px;
-  margin-left: 140px;
 }
 
-.p {
-  font-weight: 100;
-  font-size: 0.9rem;
-  max-width: 600px;
-  margin: 19px 140px;
+.ingredient_describtion.p {
+  margin-top: 0px;
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 10px auto;
-  width: 100%;
-  max-width: 900px;
 }
 
-#ingredient_describtion {
+.text .overskrift_pop_up {
+  margin: 30px 0 0 15px;
+  text-align: start;
+}
+
+.text p {
+  max-width: none;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.modal-content h3 {
+  margin-left: 15px;
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.recipename {
+  color: var(--text-color);
+  margin: 10px 0 30px 0;
+}
+/* #ingredient_describtion {
   margin-top: 2px;
-}
+} */
 
-h3 {
+/* h3 {
   margin-top: 35px;
-}
+} */
 
-.overskrift_grid {
+/* .overskrift_grid {
   display: grid;
   grid-template-columns: 1fr 5fr;
   width: 100%;
-}
+} */
 
-.overskrift_pop_up {
-  font-size: 1rem;
-  font-weight: 200;
-  margin-top: 20px;
-}
-
-.emoji {
+/* .emoji {
   font-size: 3rem;
   margin-left: 140px;
-}
+} */
 
-.p2 {
+/* .p2 {
   margin-left: 20px;
-}
+} */
+
 /* GRID */
 .grid_pop_up {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  margin: 0 15px;
+  /* grid-template-columns: 1fr 1fr; */
+  /* gap: 20px;
   row-gap: 20px;
-  margin: 30px 20px;
+  margin: 30px 20px; */
 }
 
-h4 {
+/* h4 {
   color: #eae1d4;
-}
+} */
 
 .take_picture {
-  margin: 72px auto;
-  padding-bottom: 50px;
-  text-align: center;
+  margin: 10px auto;
+  /* text-align: center; */
 }
 
 /* Buttons */
@@ -142,74 +150,117 @@ h4 {
 /* Back to ingredients */
 .close2 {
   position: relative;
-  bottom: 43px;
+  margin: 30px 0;
   color: #464646;
   padding: 15px 30px;
   border-radius: 70px;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #eae1d4;
-  font-weight: 600;
+  background-color: var(--primary-button-color);
+  font-weight: bold;
 }
 
-#back {
+/* #back {
   border: 2.5px solid #eae1d4;
   text-align: center;
-}
+} */
 
 .back_button {
   display: flex;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
-.close2:hover {
+/* .close2:hover {
   cursor: pointer;
   font-weight: bolder;
-}
+} */
 
-@media only screen and (min-width: 600px) and (max-width: 1100px) {
+@media (min-width: 800px) {
   .modal-content {
     width: 80%;
   }
 
   .modal .close {
-    position: absolute;
-    top: 0;
-    right: 13px;
-    font-size: 2rem;
-    padding: 3px 9px;
+    top: 2.5%;
+    left: 80%;
   }
 
-  .ingredient_closeup {
-    height: 200px;
-  }
-
-  #ingredient_image {
+  /* #ingredient_image {
     width: 120px;
-    height: 120px;}
+    height: 120px;
+  } */
+
   .ingredient_image {
-    width: 100px;
-    height: 100px;
-    top: 161px;
-    left: 20%;
+    width: 170px;
+    height: 170px;
+    top: 19%;
+    left: 17%;
   }
 
   .ingredient_name {
-    margin-top: 66px;
+    margin-top: 90px;
     font-size: 1.3rem;
   }
 
+  .text p,
+  .text h3 {
+    justify-content: center;
+    max-width: 500px;
+  }
+
+  /* 
   .p {
     font-size: 0.8rem;
     margin: 19px;
-  }
+  } */
 
   .grid_pop_up {
-    margin: 30px auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .back_button {
     margin: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-content {
+    width: 50%;
+  }
+
+  .modal .close {
+    top: 3%;
+    left: 70%;
+  }
+
+  /* #ingredient_image {
+    width: 120px;
+    height: 120px;
+  } */
+
+  .ingredient_image {
+    width: 190px;
+    height: 190px;
+    top: 24%;
+    left: 29%;
+  }
+
+  .text {
+    margin-top: 40px;
+  }
+
+  /* .ingredient_name {
+    margin-top: 90px;
+    font-size: 1.3rem;
+  } */
+
+  .grid_pop_up {
+    max-width: 600px;
+    margin: auto;
+  }
+  .use_it_text {
+    margin-top: 40px;
   }
 }

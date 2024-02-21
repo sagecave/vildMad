@@ -96,11 +96,11 @@ input[type="submit"] {
   margin: 15px auto;
   background-color: var(--primary-button-color);
   color: var(--primary-color);
-  padding: 12px 20px;
+  padding: 11px 20px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  font-family: robotoB;
+  font-size: 18px;
 }
 
 .formular h2 {
@@ -147,26 +147,4 @@ input[type="submit"] {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
-}
-
-/* BAGGRUND */
-
-.baggrund_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  position: absolute;
-  top: 10px;
-  left: 209px;
-  z-index: 0;
-  width: 87%;
-  height: 100%;
-  gap: 100px;
-  row-gap: 100px;
-  row-gap: 84px;
-}
-
-.baggrund_grid img {
-  width: 200px;
-  opacity: 0.5;
 }
